@@ -14,12 +14,12 @@ const displayData = (data) => {
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
-    <img src="Flag-Bangladesh.webp" alt="" />
-    <h1 class="card-title">Bangladesh</h1>
-    <p class="para">Population: <samp class="result">555555</samp></p>
-    <p class="para">Currency: <samp class="result">555555</samp></p>
-    <p class="para">Region: <samp class="result">asia</samp></p>
-    <p class="para">Capital: <samp class="result">dhaka</samp></p>
+    <img src="${element.flags.png}" alt="" />
+    <h1 class="card-title">${element.name.common}</h1>
+    <p class="para">Population: <samp class="result">${element.population}</samp></p>
+    <p class="para">Official-Name: <samp class="result">${element.name.official}</samp></p>
+    <p class="para">Region: <samp class="result">${element.region}</samp></p>
+    <p class="para">Capital: <samp class="result">${element.capital}</samp></p>
     `;
     cards.appendChild(card);
   });
