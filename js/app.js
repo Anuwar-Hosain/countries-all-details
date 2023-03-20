@@ -11,6 +11,17 @@ const loadData = () => {
 const displayData = (data) => {
   data.forEach((element) => {
     console.log(element);
+    const card = document.createElement("div");
+    card.classList.add("card");
+    card.innerHTML = `
+    <img src="Flag-Bangladesh.webp" alt="" />
+    <h1 class="card-title">Bangladesh</h1>
+    <p class="para">Population: <samp class="result">555555</samp></p>
+    <p class="para">Currency: <samp class="result">555555</samp></p>
+    <p class="para">Region: <samp class="result">asia</samp></p>
+    <p class="para">Capital: <samp class="result">dhaka</samp></p>
+    `;
+    cards.appendChild(card);
   });
 };
 loadData();
