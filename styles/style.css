@@ -1,23 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 .size {
   max-width: 75vw;
   margin: 0 auto;
 }
+/* header section */
+
 /* main section */
+/* search */
+.search {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.input,
+.select {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  /* border-bottom: 1px solid #000000; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 5px;
+  width: 400px;
+  margin-right: 20px;
+}
+.select {
+  width: 250px;
+}
+.search-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  background: transparent;
+}
+/* search */
+
 .card {
   width: 250px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   padding: 20px;
 }
 .card img {
-  width: 90%;
+  width: 100%;
+  border-radius: 5px;
 }
 .card-title {
   font-size: 1.5rem;
@@ -27,7 +65,7 @@
 .para {
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .result {
   font-weight: normal;
