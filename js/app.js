@@ -26,15 +26,14 @@ const displayData = (data) => {
 // search button action
 const searchBtn = () => {
   cards.innerHTML = "";
-  console.log(URL);
   const inputValue = document.getElementById("inputField");
   const value = inputValue.value;
-  console.log(value);
   const URL1 = `https://restcountries.com/v3.1/name/${value}`;
   //   fetch(URL)
   //     .then((res) => res.json())
   //     .then((data) => displayData(data));
   loadData(URL1);
+  inputValue.value = "";
 };
 // logo action
 document.getElementById("logo").addEventListener("click", function () {
