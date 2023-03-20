@@ -19,3 +19,16 @@
 .card img {
   width: 90%;
 }
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+.para {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.result {
+  font-weight: normal;
+}
