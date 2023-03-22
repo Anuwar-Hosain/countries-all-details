@@ -29,9 +29,6 @@ const searchBtn = () => {
   const inputValue = document.getElementById("inputField");
   const value = inputValue.value;
   const URL1 = `https://restcountries.com/v3.1/name/${value}`;
-  //   fetch(URL)
-  //     .then((res) => res.json())
-  //     .then((data) => displayData(data));
   loadData(URL1);
   inputValue.value = "";
 };
@@ -39,5 +36,17 @@ const searchBtn = () => {
 document.getElementById("logo").addEventListener("click", function () {
   cards.innerHTML = "";
   loadData(URL);
+});
+// enter button
+document.getElementById("inputField").addEventListener("keyup", function (e) {
+  console.log(e.key);
+  if (e.key === "Enter") {
+    cards.innerHTML = "";
+    const inputValue = document.getElementById("inputField");
+    const value = inputValue.value;
+    const URL1 = `https://restcountries.com/v3.1/name/${value}`;
+    loadData(URL1);
+    inputValue.value = "";
+  }
 });
 loadData(URL);
